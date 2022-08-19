@@ -9,7 +9,6 @@ import { createCompleteFullDid } from './create-full';
 
 type Options = {
   seed: string;
-  // upper: boolean | undefined;
 };
 
 export const command: string = 'create-ctype';
@@ -17,9 +16,6 @@ export const desc: string = 'Create Credential type';
 
 export const builder: CommandBuilder<Options, Options> = (yargs) =>
   yargs
-    // .options({
-    //   upper: { type: 'boolean' },
-    // })
     .positional('fields', { type: 'string', demandOption: true });
 
 export const handler = async (argv: Arguments<Options>) => {

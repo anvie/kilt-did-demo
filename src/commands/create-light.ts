@@ -4,7 +4,6 @@ import * as Kilt from '@kiltprotocol/sdk-js';
 
 type Options = {
   seed: string;
-  // upper: boolean | undefined;
 };
 
 export const command: string = 'create-light <seed>';
@@ -12,9 +11,6 @@ export const desc: string = 'Create light did <seed>';
 
 export const builder: CommandBuilder<Options, Options> = (yargs) =>
   yargs
-    // .options({
-    //   upper: { type: 'boolean' },
-    // })
     .positional('seed', { type: 'string', demandOption: true });
 
 export const handler = async (argv: Arguments<Options>) => {

@@ -9,7 +9,6 @@ import * as Kilt from '@kiltprotocol/sdk-js';
 
 type Options = {
   seed: string;
-  // upper: boolean | undefined;
 };
 
 export const command: string = 'query <identifier>';
@@ -17,9 +16,6 @@ export const desc: string = 'Query DID <identifier>';
 
 export const builder: CommandBuilder<Options, Options> = (yargs) =>
   yargs
-    // .options({
-    //   upper: { type: 'boolean' },
-    // })
     .positional('identifier', { type: 'string', demandOption: true });
 
 export const handler = async (argv: Arguments<Options>) => {
