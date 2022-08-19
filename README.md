@@ -1,9 +1,3 @@
 # Kilt Did Demo
 
-My cool CLI app
-
-
-Author: Robin (robinsyihab@gmail.com)
-
-
-
+Demo script to use Kilt protocol.
